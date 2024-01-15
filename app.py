@@ -10,11 +10,11 @@ st.title("Presupuesto General de la Nación")
 
 
 
-df = pd.read_csv('gastos.csv')
-rels_or = pd.read_csv('relationships_or.csv')
-rels = pd.read_csv('relationships.csv')
+df = pd.read_csv('data/gastos.csv')
+rels_or = pd.read_csv('data/relationships_or.csv')
+rels = pd.read_csv('data/relationships.csv')
 
-with open('dic_info.json', 'r') as js:
+with open('data/dic_info.json', 'r') as js:
     dic_info = json.load(js)
 
 year = st.select_slider("Seleccione un año", df['year'].unique())
