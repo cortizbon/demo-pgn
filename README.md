@@ -1,0 +1,1 @@
+Ejecutar el notebook `extracción_datos.ipynb`, por ahora.
